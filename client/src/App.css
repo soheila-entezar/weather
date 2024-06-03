@@ -39,3 +39,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family:samimBoldWoff ;
+  src: url('../public/Fonts/samim-font-v2.0.1/Samim-Bold.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:samim ;
+  src: url('../public/Fonts/samim-font-v2.0.1/Samim.woff');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:samimBoldEot ;
+  src: url('../public/Fonts/samim-font-v2.0.1/Samim-Bold.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:samimBoldTtf ;
+  src: url('../public/Fonts/samim-font-v2.0.1/Samim-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:samimBoldWoff2 ;
+  src: url('../public/Fonts/samim-font-v2.0.1/Samim-Bold.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:yekan ;
+  src: url('../public/Fonts/B_Yekan/B_Yekan/Yekan.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.backImage{
+  background-image: url('../public/Images/image_02_06_2024_941.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
