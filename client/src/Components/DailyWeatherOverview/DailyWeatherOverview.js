@@ -28,7 +28,8 @@ function DailyWeatherOverview() {
           <SelctedWeathersTimeStatus />
           <SelctedWeathersTimeStatus />
           <SelctedWeathersTimeStatus />
-          
+          <SelctedWeathersTimeStatus />
+          <SelctedWeathersTimeStatus />
         </div>
       </div>
     </div>
