@@ -1,5 +1,5 @@
 import React from "react";
-import SelctedWeathersTimeStatus from "../SelctedWeathersTimeStatus/SelctedWeathersTimeStatus";
+import TimerRangeSelector from "../TimerRangeSelector/TimerRangeSelector";
 function DailyWeatherOverview() {
   return (
     <div className="w-[100%] sm:w-[60%] md:w-[70%] lg:w-[80%] h-[100%] flex flex-wrap justify-center flex-grow overflow-hidden">
@@ -19,15 +19,15 @@ function DailyWeatherOverview() {
           </div>
         </div>
         <div className="w-[100%] h-[40%] md:h-[25%] flex justify-between items-center flex-wrap ">
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
-          <SelctedWeathersTimeStatus />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
+          <TimerRangeSelector />
           
         </div>
       </div>
