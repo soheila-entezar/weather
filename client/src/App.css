@@ -84,3 +84,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.option-custom{
+  background-color: #3b3b3c;
+  opacity: 0.2;
+  border: none;
+
+}
