@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import TimerRangeSelector from "../TimerRangeSelector/TimerRangeSelector";
+import { WiDayCloudy } from "react-icons/wi";
+import { WiDayCloudyGusts } from "react-icons/wi";
+import { WiCloudy } from "react-icons/wi";
+import { WiSunrise } from "react-icons/wi";
+
 function DailyWeatherOverview() {
+
+const [weatherChart, setWeatherChart] = useState([
+  {time:'9:00' , temperature:'20' ,icon:<WiDayCloudy />},
+  {time:'10:00' , temperature:'19' ,icon:<WiDayCloudyGusts />},
+  {time:'11:00' , temperature:'17' ,icon:<WiCloudy />},
+  {time:'12:00' , temperature:'22' ,icon:<WiSunrise />},
+  {time:'13:00' , temperature:'20' ,icon:<WiDayCloudy />},
+  {time:'14:00' , temperature:'25' ,icon:<WiSunrise />},
+  {time:'15:00' , temperature:'18' ,icon:<WiCloudy />},
+  {time:'16:00' , temperature:'18' ,icon:<WiDayCloudy />},
+  {time:'17:00' , temperature:'15' ,icon:<WiDayCloudyGusts />},
+  {time:'18:00' , temperature:'10' ,icon:<WiDayCloudy />}
+])
+
   return (
     <div className="w-[100%] sm:w-[60%] md:w-[70%] lg:w-[80%] h-[100%] flex flex-wrap justify-center flex-grow overflow-hidden">
       <div className="w-[100%] md:w-[95%] flex justify-end flex-wrap">
@@ -19,16 +38,11 @@ function DailyWeatherOverview() {
           </div>
         </div>
         <div className="w-[100%] h-[40%] md:h-[25%] flex justify-between items-center flex-wrap ">
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          <TimerRangeSelector />
-          
+          {
+            weatherChart.map((item, index) => (
+               <TimerRangeSelector time={item.time} temperature={item.temperature} icon={item.icon} key={index}/>
+            ))
+          }
         </div>
       </div>
     </div>
