@@ -21,9 +21,9 @@ const [weatherChart, setWeatherChart] = useState([
 ])
 
   return (
-    <div className="w-[100%] sm:w-[60%] md:w-[70%] lg:w-[80%] h-[100%] flex flex-wrap justify-center flex-grow overflow-hidden">
+    <div className="w-[100%] sm:w-[60%] md:w-[70%] lg:w-[80%] h-[100%] flex flex-wrap justify-center flex-grow order-2 sm:order-1 overflow-hidden mt-4">
       <div className="w-[100%] md:w-[95%] flex justify-end flex-wrap">
-        <div className="w-[100%] md:w-4/12 lg:w-3/12 h-[10%] md:h-[40%] lg:h-[55%] flex  pt-4">
+        <div className="w-[100%] md:w-4/12 lg:w-3/12 h-[40%] md:h-[40%] lg:h-[55%] flex  pt-4">
           <div className="w-[70%] h-[10%] text-sm text-slate-50 flex flex-grow justify-center items-center bg-slate-800 bg-opacity-20">
             1403 اردیبهشت 1
           </div>
