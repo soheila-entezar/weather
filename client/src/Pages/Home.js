@@ -30,13 +30,17 @@ function Home() {
           loop
           muted
         ></video>
-        <div className="w-full h-full relative z-[1] bg-white bg-opacity-10 flex justify-center items-center overflow-auto">
-          <div className="w-[95%] h-[90%] bg-white bg-opacity-45 flex justify-center items-center rounded-lg">
-            <div className="w-[97%] md:w-[98%] lg:w-[99%] h-[98%] bg-cover bg-center bg-opacity-100 rounded-md flex sm:flex-row justify-end flex-wrap">
+        <div className="w-full h-full relative z-[1] bg-white bg-opacity-10 flex justify-center items-center overflow-auto" 
+          autoPlay
+          loop
+          muted>
+          <div className="w-[95%] h-[90%] bg-slate-600 bg-opacity-45 flex justify-center items-center rounded-lg">
+           <div className="w-[97%] md:w-[98%] lg:w-[99%] h-[98%] bg-cover bg-center bg-opacity-100 rounded-md flex sm:flex-row justify-end flex-wrap">
               <DailyWeatherOverview />
               <WeatherConditions />
             </div>
           </div>
+           
         </div>
       </div>
     </>
