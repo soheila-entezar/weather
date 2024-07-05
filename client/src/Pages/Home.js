@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherConditions from "../Components/WeatherConditions/WeatherConditions";
 import DailyWeatherOverview from "../Components/DailyWeatherOverview/DailyWeatherOverview";
+import { CityContext } from "../Components/CityContext";
 
 function Home() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(3);
@@ -11,8 +12,16 @@ function Home() {
     { src: "/Video/Wind.mp4" },
   ];
 
+  const [selectedCity, setSelectedCity] = useState('تبریز');
+  const [temperature, setTemperature] = useState('25');
+
+  const updateCity = (city, temp) => {
+    setSelectedCity(city);
+    setTemperature(temp);}
+
   return (
-    <>
+    <CityContext.Provider  value={{ selectedCity, temperature, updateCity }}>
+       <>
       <div className="w-full h-screen relative overflow-hidden">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
@@ -31,6 +40,8 @@ function Home() {
         </div>
       </div>
     </>
+    </CityContext.Provider>
+   
   );
 }
 

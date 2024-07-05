@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { GrLocation } from "react-icons/gr";
 import { SlArrowDown } from "react-icons/sl";
+import { CityContext } from '../CityContext';
 
 function LocationSelector() {
+  const {updateCity}=useContext(CityContext)
   const [option, setOption] = useState([
-    { id: 1, name: 'تبریز' },
-    { id: 2, name: 'مرند' },
-    { id: 3, name: 'اهر' },
+    { id: 1, name: 'تبریز' ,temperature:'25'},
+    { id: 2, name: 'مرند',temperature:'30'},
+    { id: 3, name: 'اهر',temperature:'12'},
   ]);
   const [selectedOption, setSelectedOption] = useState(option[0].name);
+  const [detaileCity, setDetaileCity] = useState()
 
   const handleChange = (event) => {
     const newValue = event.target.value;
     setSelectedOption(newValue);
     alert(`شهر جدید: ${newValue}`);
+    const selectedCity = option.find(option => option.name === newValue);
+    updateCity(selectedCity.name, selectedCity.temperature);
   };
 
   return (

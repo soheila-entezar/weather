@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { TbTemperatureCelsius } from "react-icons/tb";
 import { FaWind } from "react-icons/fa";
+import { CityContext } from '../CityContext';
 function CurrentWeather() {
+  const {temperature}= useContext(CityContext)
   return (
     <div className="w-[70%] h-[20%] border-b-[1px] border-stone-500 flex flex-wrap">
         <div className="w-[100%] h-[60%] text-7xl text-slate-50 flex justify-center">
-          11
+          {temperature}
           <TbTemperatureCelsius />
         </div>
 
