@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/weather/static/css/main.3075eb55.css",
+    "main.js": "/weather/static/js/main.0922ff89.js",
+    "static/js/453.419a5d54.chunk.js": "/weather/static/js/453.419a5d54.chunk.js",
+    "static/media/Samim-Bold.eot": "/weather/static/media/Samim-Bold.a483d287bb623e0176a1.eot",
+    "static/media/Samim-Bold.ttf": "/weather/static/media/Samim-Bold.58c4bdf1445242c26ebf.ttf",
+    "static/media/Yekan.ttf": "/weather/static/media/Yekan.012789e6e9f8b9a4929f.ttf",
+    "static/media/Samim-Bold.woff": "/weather/static/media/Samim-Bold.ad277d399471694a2c3b.woff",
+    "static/media/Samim.woff": "/weather/static/media/Samim.a6338e0951bd9771bde3.woff",
+    "static/media/Samim-Bold.woff2": "/weather/static/media/Samim-Bold.f2bee7f22a069478cccb.woff2",
+    "static/media/image_02_06_2024_941.jpg": "/weather/static/media/image_02_06_2024_941.efcbb52e89c81b5fc0c9.jpg",
+    "index.html": "/weather/index.html",
+    "main.3075eb55.css.map": "/weather/static/css/main.3075eb55.css.map",
+    "main.0922ff89.js.map": "/weather/static/js/main.0922ff89.js.map",
+    "453.419a5d54.chunk.js.map": "/weather/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3075eb55.css",
+    "static/js/main.0922ff89.js"
+  ]
+}
